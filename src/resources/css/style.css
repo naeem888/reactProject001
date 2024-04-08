@@ -1,0 +1,62 @@
+
+
+.topheader{
+    /* background-color: aquamarine !important; */
+    background-image: url('../images/top1.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.topoverlay{
+    min-height: 500px;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.8);
+}
+.Topcontent{
+    margin-top: 200px;
+}
+h1,h4{
+    color: azure;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.serviceHeader h1{
+    color: rgb(49, 128, 225);
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+h2{
+    color: rgb(49, 128, 225);  
+}
+p{
+    text-align: justify;
+}
+
+.navmenus{
+/* background-color: aqua !important; */
+margin-bottom: 0px;
+}
+.btn{
+    align-items: center;
+}
+.image{
+    width: 100%;
+    max-height: 350px;
+}
+hr {
+    all: initial;
+    display: block;
+    border-bottom: 4px dotted rgb(49, 128, 225);;
+    margin-top: 30px;
+  }
+  .cardSize{
+    width: 300px;
+    height: auto;
+  }
+
+ 
