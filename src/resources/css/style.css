@@ -17,20 +17,23 @@
     background-color: rgba(0, 0, 0,0.8);
 }
 .Topcontent{
-    margin-top: 200px;
+    margin-top: 150px;
 }
 h1,h4{
     color: azure;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 .serviceHeader h1{
     color: rgb(49, 128, 225);
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     margin-top: 40px;
 }
 h2{
+    color: rgb(49, 128, 225);  
+}
+.serviceHeader{
     color: rgb(49, 128, 225);  
 }
 p{
@@ -38,25 +41,136 @@ p{
 }
 
 .navmenus{
-/* background-color: aqua !important; */
-margin-bottom: 0px;
+/* background: none !important; */
+background-color: rgb(245, 141, 21)!important;
+
+
+}
+.navtext {
+    color: rgb(17, 125, 220);
+    /* background-color: aqua; */
+    
 }
 .btn{
     align-items: center;
 }
-.image{
-    width: 100%;
-    max-height: 350px;
-}
-hr {
-    all: initial;
-    display: block;
-    border-bottom: 4px dotted rgb(49, 128, 225);;
-    margin-top: 30px;
-  }
-  .cardSize{
-    width: 300px;
-    height: auto;
-  }
 
- 
+.cardimg{
+      text-align: center;
+
+}
+.cardimg img{
+    width: 150px;
+    height: 150px;
+}
+
+
+
+
+
+.containerWidth{
+    max-width: 80%;
+    /* background-color: rgb(12, 171, 118); */
+}
+ .chart{
+    /* margin-top: 0px; */
+ }
+
+ .containerWidthService{
+    width: 80%;
+ }
+
+ /* .TotalWork{
+    background-color: url('../images/top.jpg');
+    min-height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+ } */
+
+ .TotalWork{
+    background: url('../images/top.jpg');
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+ }
+
+
+ .TotalWorkOverlay{
+    min-height: 500px;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.5);
+
+ }
+
+ .countNumber{
+    color: aliceblue;
+
+ }
+ .countTitle{
+    color: aliceblue;
+
+ }
+ .countsection{
+    margin-top: 15%;
+ }
+.projectContainer{
+    margin-top: 50px;
+    max-width: 70%;
+}
+.coursesContainer{
+    margin-top: 50px;
+    max-width: 70%;
+}
+.playContainer{
+    max-width: 70%;
+}
+.footerContainer h5{
+    /* color: rgb(17, 125, 220); */
+    color: black;
+}
+.playbutton{
+    color: rgb(17, 125, 220);
+    font-size: 30px;
+    cursor: pointer;
+}
+.videocard{
+    background-color: #ffff;
+    padding: 100px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px 0 rgba(0, 120, 125, 0.2);
+}
+.reviewContainer{
+    margin-top: 50px;
+    max-width: 70%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 120, 125, 0.2);
+}
+.imgcss{
+    margin: 0 auto;
+}
+.border{
+    width: 100%;
+    height: 1px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 120, 125, 0.2);
+
+    
+}
+
+.footerContainer{
+    margin-top: 50px;
+    max-width: 70%;
+}
+.footerborder{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(17, 125, 220);
+}
+.logofooter{
+    color: rgb(17, 125, 220);
+    font-size: 15px;
+    
+}

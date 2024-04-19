@@ -26,14 +26,14 @@ class Chart extends Component{
 
     render(){
         return(
-            <Fragment>
-                <Container className='mb-5'>
+            <Container className='containerWidth'>
+                <Container  className='mb-5'>
                     <div>
                         <h2 className='text-center mt-3 mb-5'>Technology Used</h2>
                     </div>
                     <Row>
-                        <Col className='ms-0' sm={6}>
-                        <BarChart className='ms-5' width={500} height={400} data={this.state.data}>
+                        <Col className=' chart' lg={6} md={6} sm={12}>
+                        <BarChart className='ms-0' width={450} height={350} data={this.state.data}>
                             <XAxis dataKey="Technology"/>
                             <Bar dataKey="project" fill='blue'>
 
@@ -41,7 +41,7 @@ class Chart extends Component{
 
                         </BarChart>
                         </Col>
-                        <Col>
+                        <Col lg={6} md={6} sm={12}>
                             <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, expedita! Odio praesentium reprehenderit expedita ut, quae minus dolores sunt animi.
                             Adipisci hic possimus dolore in assumenda pariatur ad excepturi, alias necessitatibus, magnam illo labore veniam officia velit voluptate veritatis nostrum.
@@ -50,13 +50,12 @@ class Chart extends Component{
 
                             {/* lorem20*5 */}
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ad doloribus accusamus ipsum rem, nam id! Perferendis dolor nostrum facere?
-                            Inventore a accusantium natus magni eos temporibus ipsam quia sint officiis quam! Laborum, ipsam minus itaque numquam ducimus labore blanditiis!
-                            Eligendi nobis incidunt illo, eos, fugiat quae laboriosam sint commodi ad harum culpa deleniti, porro aperiam deserunt cum corporis nostrum!
+                            ad harum culpa deleniti, porro aperiam deserunt cum corporis nostrum!
                             </p>
                         </Col>
                     </Row>
                 </Container>
-            </Fragment>
+            </Container>
         )
     }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 // import Container from 'react-bootstrap/Container';
-import '../resources/css/style.css'
+import '../../resources/css/style.css'
 import {Container, Row,Col} from 'react-bootstrap'
 import Button from 'react-bootstrap/Button';
 
