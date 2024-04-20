@@ -17,7 +17,8 @@ export default class VideoPlay extends Component {
                      adipisicing elit. Beatae est inventore id expedita. Qui minima voluptas impedit 
                      odit, fugiat quod repudiandae nisi autem. At beatae nostrum voluptatem rem ad?
                      tempora deleniti, laborum harum ipsam?</p>
-                     <FaCirclePlay className='playbutton'/>
+                     <p className='text-center'> <FaCirclePlay className='playbutton'/></p>
+                     
 
 
                 </Col>
