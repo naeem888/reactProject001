@@ -53,39 +53,42 @@ export default class ClientReview extends Component {
         <Container className='reviewContainer'>
             <Slider {...settings}> 
             <Row className='text-center'>
+            <h3 className='mb-5 mt-5'> Client Says</h3>
+
                 <Col>
-                    <h5 className='mb-5 mt-5'> Client Says</h5>
                  <img className='imgcss' src={reviewimg} alt="" />
-                 <h3> Web Development</h3>
-                 <p className='ms-5 me-5 text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Incidunt ad dolorum expedita modi magni animi exercitationem 
-                    illo, vitae quis blanditiis totam </p>
+                 <h3 className='text-black'> Web Development</h3>
+                 <p className='ms-5 me-5 text-center'>I design modern user interface and other graphical
+                 components for your business and institution graphical comments for your business</p>
                 </Col>
             </Row>
-
 
             <Row className='text-center'>
+            <h3 className='mb-5 mt-5'> Client Says</h3>
+
                 <Col>
-                    <h5 className='mb-5 mt-5'> Client Says</h5>
                  <img className='imgcss' src={reviewimg} alt="" />
-                 <h3> Web Development</h3>
-                 <p className='ms-5 me-5 text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Incidunt ad dolorum expedita modi magni animi exercitationem 
-                    illo, vitae quis blanditiis totam </p>
+                 <h3 className='text-black'> Web Development</h3>
+                 <p className='ms-5 me-5 text-center'>I design modern user interface and other graphical
+                 components for your business and institution graphical comments for your business</p>
                 </Col>
             </Row>
-
-
             <Row className='text-center'>
+            <h3 className='mb-5 mt-5'> Client Says</h3>
+
                 <Col>
-                    <h5 className='mb-5 mt-5'> Client Says</h5>
                  <img className='imgcss' src={reviewimg} alt="" />
-                 <h3> Web Development</h3>
-                 <p className='ms-5 me-5 text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Incidunt ad dolorum expedita modi magni animi exercitationem 
-                    illo, vitae quis blanditiis totam </p>
+                 <h3 className='text-black'> Web Development</h3>
+                 <p className='ms-5 me-5 text-center'>I design modern user interface and other graphical
+                 components for your business and institution graphical comments for your business</p>
                 </Col>
             </Row>
+
+
+
+
+
+ 
 
 
 

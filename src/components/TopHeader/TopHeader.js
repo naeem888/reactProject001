@@ -13,8 +13,8 @@ export default class TopHeader extends Component {
                     <Container className='Topcontent'>
                         <Row>
                             <Col className='text-center'>
-                            <h1>Grow your Business</h1>
-                            <h4> share ideas with us and make money</h4>
+                            <h1 className='text-white'>SOFTWARE ENGINEER</h1>
+                            <h4 className='mt-5 mb-3 text-white'> Mobile & Web Application</h4>
                             <Button variant="primary" className='text-center btn'>More info</Button>{' '}
 
 

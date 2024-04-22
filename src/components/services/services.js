@@ -14,24 +14,23 @@ export default class Services extends Component {
     return (
         <Container className='containerWidthService'>
             <div className='serviceHeader '>
-                <h4 className='serviceHeader'> MY SERVICES</h4>
+                <h2 className='serviceHeader mb-5 text-center'> MY SERVICES</h2>
             </div>
         <Row>
-          <Col className='p-3 cardcol' sm={4}>
-          <Card>
+          <Col className='p-3' sm={4}>
+          <Card className='cardcol'>
             <div className='cardimg mt-5'>
               <img  src={web} alt="" />
-            {/* <Card.Img variant="top" src={graphics} /> */}
             </div>
             
             
            
-            <Card.Body className='mb-3'>
+            <Card.Body className='mb-3 text-center'>
                 <Card.Title>Web Development</Card.Title>
                 <Card.Text>
                 <p>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+                I design and develop static and dynamic web sites as per your requirements as web
+                believe, "web is world's next home"
                 </p>
             
 
@@ -40,19 +39,19 @@ export default class Services extends Component {
             </Card>
           </Col>
 
-          <Col className='p-3 cardcol' sm={4}>
-          <Card>
+          <Col className='p-3' sm={4}>
+          <Card className='cardcol'>
             <div className='cardimg mt-5'>
             <Card.Img variant="top" src={mobile} />
             
 
             </div>
-            <Card.Body className='mb-3'>
+            <Card.Body className='mb-3 text-center'>
                 <Card.Title>Mobile Development</Card.Title>
                 <Card.Text>
                   <p>
-                  Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+                  I build native and cross platform mobile app for your business and
+                  and institution as pwer as your requirements.
                   </p>
              
                 </Card.Text>
@@ -60,18 +59,18 @@ export default class Services extends Component {
             </Card>
           </Col>
 
-          <Col className='p-3 cardcol' sm={4}>
-          <Card>
+          <Col className='p-3' sm={4}>
+          <Card className='cardcol'>
             <div className='cardimg mt-5'>
             <Card.Img variant="top" src={graphics} />
 
             </div>
-            <Card.Body className='mb-3'>
+            <Card.Body className='mb-3 text-center'>
                 <Card.Title>Graphics Design</Card.Title>
                 <Card.Text >
                 <p>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+                I design modern user interface and other graphical components for your
+                business and institution.
                 </p>
                 </Card.Text>
 

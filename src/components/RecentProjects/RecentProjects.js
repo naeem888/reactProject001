@@ -9,47 +9,45 @@ export default class recentProjects extends Component {
     return (
       <Fragment>
         <Container className='projectContainer'>
+          <h2 className='text-center mb-5'> RECENT PROJECTS</h2>
             <Row>
                 <Col lg={4} md={4} sm={12}>
-                <Card>
+                <Card className='recentProject'>
                 <img src={projectimg}></img>
-                <Card.Body>
+                <Card.Body className='text-center'>
                     <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                    <Card.Text className='text-center'>
+                    Some quick example text to build on the card title and make 
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button variant="primary">Details</Button>
                 </Card.Body>
                 </Card>
 
                 </Col>
 
                 <Col lg={4} md={4} sm={12}>
-                <Card>
+                <Card className='recentProject'>
                 <img src={projectimg}></img>
-                <Card.Body>
+                <Card.Body className='text-center'>
                     <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                    <Card.Text className='text-center'>
+                    Some quick example text to build on the card title and make 
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button variant="primary">Details</Button>
                 </Card.Body>
                 </Card>
                 </Col>
 
 
                 <Col lg={4} md={4} sm={12}>
-                <Card>
+                <Card className='recentProject'>
                 <img src={projectimg}></img>
-                <Card.Body>
+                <Card.Body className='text-center'>
                     <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                    <Card.Text className='text-center'>
+                    Some quick example text to build on the card title and make
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button variant="primary">Details</Button>
                 </Card.Body>
                 </Card>
                 </Col>

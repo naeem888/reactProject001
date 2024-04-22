@@ -3,7 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import CountUp from 'react-countup'
 import VisibilitySensor from 'react-visibility-sensor'
-import {BsArrowUpCircle} from "react-icons/bs"
+import { FaCircleCheck } from "react-icons/fa6";
+
 
 export default class TotalWorks extends Component {
   render() {
@@ -25,7 +26,11 @@ export default class TotalWorks extends Component {
                             )}
                             </CountUp> 
                             </h1>
-                            <h4 className='countTitle'>total project</h4>
+                            <h4 className='countTitle'>TOTAL PROJECTS</h4>
+                            <div className='underline'></div>
+
+                            
+
                             </Col>
 
                             <Col>
@@ -42,18 +47,22 @@ export default class TotalWorks extends Component {
                             )}
                             </CountUp>
                              </h1>
-                            <h4 className='countTitle'>total Clients</h4>
+                            <h4 className='countTitle'>TOTAL CLIENTS</h4>
+                            <div className='underline'></div>
+
+
                             </Col>
+
 
                             <Col>
                             <Card >
                             <Card.Body>
                                 <Card.Title>How I Work</Card.Title>
                                 <Card.Text>
-                                    <p><BsArrowUpCircle className='arrow'/> Requirement gathering</p>
-                                    <p><BsArrowUpCircle className='arrow'/> System analysis</p>
-                                    <p><BsArrowUpCircle className='arrow'/> Coding testing</p>
-                                    <p><BsArrowUpCircle className='arrow'/> Implementations</p>
+                                    <p> <FaCircleCheck className='check' />  Requirement Gathering</p>
+                                    <p> <FaCircleCheck className='check' />  System Analysis</p>
+                                    <p> <FaCircleCheck className='check' /> Coding Testing</p>
+                                    <p> <FaCircleCheck className='check' /> Implementations</p>
 
                     
                                 </Card.Text>

@@ -1,15 +1,23 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment, useState, useEffect } from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+// import '../../src/resources/css/bootstrap.min.css'
 import '../../resources/css/bootstrap.min.css'
 import logo from '../../resources/images/logo.png'
 
-export default class NavBar extends Component {
-  render() {
+const NavBar =() => {
+  const [sticky, setSticky] = useState(false);
+  useEffect(() =>{
+    window.addEventListener('scroll', ()=>{
+      window.scrollY > 100 ? setSticky(true): setSticky(false)
+
+    })
+
+  });
     return (
       <Fragment>
-      <Navbar collapseOnSelect expand="lg" fixed="top" className="bg-body-tertiary navmenus">
+      <Navbar  collapseOnSelect expand="lg" fixed="top" className={` ${sticky? 'navbgcolor navmenus' : '' }` }>
       <Container >
         <Navbar.Brand href="#home"><img src={logo} alt="" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -19,12 +27,12 @@ export default class NavBar extends Component {
   
           </Nav>
           <Nav className='navtext'>
-            <Nav.Link  href="#home">HOME</Nav.Link>
-            <Nav.Link  href="#services">SERVICES</Nav.Link>
-            <Nav.Link  href="#courses">COURSES</Nav.Link>
-            <Nav.Link  href="#portfolio">PORTFOLIO</Nav.Link>
-            <Nav.Link  href="#contact">CONTACT</Nav.Link>
-            <Nav.Link  href="#about us">ABOUT US</Nav.Link>
+            <Nav.Link className='text-white' href="#home">HOME</Nav.Link>
+            <Nav.Link className='text-white' href="#services">SERVICES</Nav.Link>
+            <Nav.Link className='text-white' href="#courses">COURSES</Nav.Link>
+            <Nav.Link className='text-white' href="#portfolio">PORTFOLIO</Nav.Link>
+            <Nav.Link className='text-white' href="#contact">CONTACT</Nav.Link>
+            <Nav.Link className='text-white' href="#about us">ABOUT US</Nav.Link>
 
           </Nav>
         </Navbar.Collapse>
@@ -32,6 +40,7 @@ export default class NavBar extends Component {
     </Navbar>
 
       </Fragment>
-    )
+    );
   }
-}
+
+export default NavBar;

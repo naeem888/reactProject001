@@ -30,11 +30,15 @@ h1,h4{
     margin-bottom: 40px;
     margin-top: 40px;
 }
-h2{
+.serviceHeader h2{
+    color: rgb(49, 128, 225);  
+}
+.chart h2{
     color: rgb(49, 128, 225);  
 }
 .serviceHeader{
     color: rgb(49, 128, 225);  
+    margin-top: 30px;
 }
 p{
     text-align: justify;
@@ -44,9 +48,15 @@ p{
 /* background: none !important; */
 font-size: 15px;
 font-family: Roboto;
+height: 50px;
 
 
 }
+.navbgcolor{
+    background-color: rgb(49, 128, 225);
+}
+
+
 .navtext {
     color: rgb(17, 125, 220);
     /* background-color: aqua; */
@@ -65,12 +75,15 @@ font-family: Roboto;
     height: 150px;
 }
 
+.cardcol{
+    box-shadow: 1px 1px 10px 1px #888888;
 
+}
 
 
 
 .containerWidth{
-    max-width: 80%;
+    max-width: 70%;
     /* background-color: rgb(12, 171, 118); */
 }
  .chart{
@@ -78,7 +91,8 @@ font-family: Roboto;
  }
 
  .containerWidthService{
-    width: 80%;
+    width: 70%;
+    margin-top: 100px;
  }
 
  /* .TotalWork{
@@ -107,6 +121,13 @@ font-family: Roboto;
     background-color: rgba(0, 0, 0,0.5);
 
  }
+ .underline{
+    width: 80px;
+    height: 1px;
+    background-color: white;
+    margin-left: 150px;
+    margin-top: 30px;
+ }
 
  .countNumber{
     color: aliceblue;
@@ -117,19 +138,41 @@ font-family: Roboto;
 
  }
  .countsection{
-    margin-top: 15%;
+    margin-top: 12%;
+ }
+
+ .check{
+    color: rgb(17, 125, 220)
  }
 .projectContainer{
     margin-top: 50px;
     max-width: 70%;
 }
+.projectContainer h2{
+    color: rgb(17, 125, 220);
+}
+
+.recentProject img{
+    width: 100%;
+    height: 300px;
+}
+
+
 .coursesContainer{
     margin-top: 50px;
     max-width: 70%;
 }
+.coursesContainer h2{
+    color: rgb(17, 125, 220);
+}
 .playContainer{
     max-width: 70%;
+    margin-top: 30px;
+
+
 }
+
+
 .footerContainer h5{
     /* color: rgb(17, 125, 220); */
     color: black;
@@ -145,10 +188,17 @@ font-family: Roboto;
     margin-top: 20px;
     box-shadow: 0 0 5px 0 rgba(0, 120, 125, 0.2);
 }
+.videocard h4{
+    color: rgb(17, 125, 220);
+    margin-bottom: 20px;
+}
 .reviewContainer{
     margin-top: 50px;
     max-width: 70%;
-    box-shadow: 5px 5px 5px 5px rgba(0, 120, 125, 0.2);
+    /* box-shadow: 5px 5px 5px 5px rgba(0, 120, 125, 0.2); */
+}
+.reviewContainer h3{
+    color: rgb(17, 125, 220);
 }
 .imgcss{
     margin: 0 auto;
@@ -162,12 +212,13 @@ font-family: Roboto;
 }
 
 .footerContainer{
-    margin-top: 50px;
+    margin-top: 100px;
     max-width: 70%;
+    margin-bottom: 100px;
 }
 .footerborder{
     width: 100%;
-    height: 30px;
+    height: 50px;
     background-color: rgb(17, 125, 220);
 }
 .logofooter{

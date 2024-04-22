@@ -1,32 +1,59 @@
-import React, { Component, Fragment } from 'react'
-import { Container,Row } from 'react-bootstrap';
-import { Col } from 'react-bootstrap/';
+import { useState } from 'react';
+import Modal from 'react-bootstrap/Modal';
 import { FaCirclePlay } from "react-icons/fa6";
-
-export default class VideoPlay extends Component {
-  render() {
-    return (
-      <Fragment>
-        <Container className='playContainer'>
-            <Row className='text-center'>
-                <Col lg={12} md={12} sm={12} className='videocard'>
-                    <h5> How I work </h5>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                     Nostrum ipsum enim atque molestias aut provident suscipit earum voluptates
-                     est velit quod mollitia odio illum Lorem ipsum dolor sit amet consectetur 
-                     adipisicing elit. Beatae est inventore id expedita. Qui minima voluptas impedit 
-                     odit, fugiat quod repudiandae nisi autem. At beatae nostrum voluptatem rem ad?
-                     tempora deleniti, laborum harum ipsam?</p>
-                     <p className='text-center'> <FaCirclePlay className='playbutton'/></p>
-                     
+import { Container,Row, Col } from 'react-bootstrap';
 
 
-                </Col>
+function Example() {
+  const [show, setShow] = useState(false);
 
-            </Row>
+  return (
+    <>
+    <Container className='playContainer mt-5'>
+    <Row>
+      <Col lg={12} md={12} sm={12} className='videocard'>
+    <h4> How I Do </h4>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Nostrum ipsum enim atque molestias aut provident suscipit earum voluptates
+        est velit quod mollitia odio illum Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Beatae est inventorid expedita. Qui minima voluptas impedit 
+        odit, fugiat quod repudiandae nisi autem. At beatae nostrum voluptatem rem ad?
+        tempora deleniti, laborum harum ipsam?</p>
 
-        </Container>
-      </Fragment>
-    )
-  }
+      <p onClick={() => setShow(true)} className='text-center'> <FaCirclePlay className='playbutton'/></p>
+      </Col>
+      </Row>
+      </Container>
+      <Modal
+        show={show}
+        onHide={() => setShow(false)}
+        dialogClassName="modal-90w"
+        aria-labelledby="example-custom-modal-styling-title"
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="example-custom-modal-styling-title">
+            Custom Modal Styling
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>
+            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
+            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
+            ipsam atque a dolores quisquam quisquam adipisci possimus
+            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
+            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
+            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
+            deleniti rem!
+          </p>
+        </Modal.Body>
+      </Modal>
+
+   
+
+    </>
+    
+  );
+  
 }
+
+export default Example;
