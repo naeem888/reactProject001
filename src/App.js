@@ -7,6 +7,7 @@ import AboutMe from './pages/AboutMe';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import Courses from './pages/Courses';
+import PageNotFound from './pages/PageNotFound';
 function App() {
   return (
       
@@ -22,6 +23,9 @@ function App() {
         <Route path="/Portfolio" element={<Portfolio/>}/>
         <Route path="/Contact" element={<Contact/>}/>
         <Route path="/AboutMe" element={<AboutMe/>}/>
+
+
+        <Route path="*" element={<PageNotFound/>}/>
 
 
       </Routes>

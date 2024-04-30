@@ -39,7 +39,7 @@ export default class RecentProjectsDetails extends Component {
                 </Col>
 
 
-                <Col lg={4} md={4} sm={12}>
+                <Col lg={4} md={4} sm={12} >
                 <Card className='recentProject'>
                 <img src={projectimg}></img>
                 <Card.Body className='text-center'>

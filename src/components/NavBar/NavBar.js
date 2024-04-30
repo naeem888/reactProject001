@@ -1,4 +1,4 @@
-import React, { Component, Fragment, useState, useEffect } from 'react'
+import React, {Fragment, useState, useEffect } from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -7,14 +7,7 @@ import '../../resources/css/bootstrap.min.css';
 import logo from '../../resources/images/logo.png';
 import { NavLink } from 'react-router-dom';
 
-const divStyle = {
 
-  textDecoration: 'none',
-  fontSize:18,
-  paddingLeft:20,
-    
-
-};
 const NavBar =() => {
   const [sticky, setSticky] = useState(false);
   useEffect(() =>{
@@ -26,9 +19,9 @@ const NavBar =() => {
   });
     return (
       <Fragment>
-      <Navbar  collapseOnSelect expand="lg" fixed="top" className={` ${sticky? 'navbgcolor navmenus' : '' }` }>
+      <Navbar  collapseOnSelect expand="lg" fixed="top" className={` ${sticky? 'navbgcolor' : '' }` }>
       <Container >
-        <Navbar.Brand href="#home"><img className='bg-white' src={logo} alt="" /></Navbar.Brand>
+        <Navbar.Brand as={NavLink} to="/"><img className='bg-white' src={logo} alt="" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -36,20 +29,14 @@ const NavBar =() => {
   
           </Nav>
           <Nav className='navtext NavStyle'>
-            {/* <Nav.Link className='text-white'NavLink to="/">HOME</Nav.Link>
-            <Nav.Link className='text-white'NavLink to="/MyServices">SERVICES</Nav.Link>
-            <Nav.Link className='text-white'NavLink to="/Courses">COURSES</Nav.Link>
-            <Nav.Link className='text-white'NavLink to="/Portfolio">PORTFOLIO</Nav.Link>
-            <Nav.Link className='text-white'NavLink to="/Contact">CONTACT</Nav.Link>
-            <Nav.Link className='text-white'NavLink to="/AboutMe">ABOUT</Nav.Link> */}
-            {/* <ul > */}
-            <NavLink style={divStyle} className='text-white' to="/">HOME</NavLink>
-            <NavLink style={divStyle} className='text-white' to="/MyServices">SERVICES</NavLink>
-            <NavLink style={divStyle} className='text-white' to="/Courses">COURSES</NavLink>
-            <NavLink style={divStyle} className='text-white' to="/Portfolio">PORTFOLIO</NavLink>
-            <NavLink style={divStyle} className='text-white' to="/Contact">CONTACT</NavLink>
-            <NavLink style={divStyle} className='text-white' to="/AboutMe">ABOUT</NavLink>
-            {/* </ul> */}
+                      
+            <Nav.Link as={NavLink} style={({isActive, isPending   }) => {return {color:isActive ? "red": "inherit",};}}  to="/">HOME</Nav.Link>
+            <Nav.Link as={NavLink} style={({isActive, isPending   }) => {return {color:isActive ? "red": "inherit",};}} className={`${sticky? 'text-red' : 'text-white'}`} to="/MyServices">SERVICES</Nav.Link>
+            <Nav.Link as={NavLink} style={({isActive, isPending   }) => {return {color:isActive ? "red": "inherit",};}} className={`${sticky? 'text-red' : 'text-white'}`} to="/Courses">COURSES</Nav.Link>
+            <Nav.Link as={NavLink} style={({isActive, isPending   }) => {return {color:isActive ? "red": "inherit",};}} className={`${sticky? 'text-red' : 'text-white'}`} to="/Portfolio">PORTFOLIO</Nav.Link>
+            <Nav.Link as={NavLink} style={({isActive, isPending   }) => {return {color:isActive ? "red": "inherit",};}} className={`${sticky? 'text-red' : 'text-white'}`} to="/Contact">CONTACT</Nav.Link>
+            <Nav.Link as={NavLink} style={({isActive, isPending   }) => {return {color:isActive ? "red": "inherit",};}} className={`${sticky? 'text-red' : 'text-white'}`} to="/AboutMe">ABOUT</Nav.Link>
+            
           </Nav>
         </Navbar.Collapse>
       </Container>
